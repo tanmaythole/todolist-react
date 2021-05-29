@@ -60,13 +60,13 @@ function App() {
     <Router>
       <Header title="My To-Do" searchBar={true}/>
       <Switch>
-        <Route exact path='/'>
+        <Route exact path='/todolist-react/'>
           <div className="container" style={myStyle}>
             <AddTodo addTodo={addTodo}/>
             <Todos todos={todos} onDelete={onDelete}/>
           </div>
         </Route>
-        <Route exact path='/about'>
+        <Route exact path='/todolist-react/about'>
           <About/>
         </Route>
       </Switch>
